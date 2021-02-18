@@ -3,7 +3,7 @@
     <p>Movie Registration Form</p>
 
     <p>Movie Title</p>
-    <input type="text" name="title" required />
+    <input type="text" name="title" min="1" max="20" required />
 
     <p>Movie Genre</p>
     <fieldset>
@@ -21,19 +21,19 @@
     </fieldset>
 
     <p>Movie Year</p>
-    <input type="number" min="1880" max="2021" step="1" value="2016" />
+    <input type="number" min="1880" max="2021" value="2021" required/>
    
 
     <p>Actors</p>
-    <input type="text" name="Actors[]" required />
-    <input type="text" name="Actors[]" />
-    <input type="text" name="Actors[]" />
-    <input type="text" name="Actors[]" />
+    <input type="text" name="Actors[]" min="5" max="30" required />
+    <input type="text" name="Actors[]" min="5" max="30" />
+    <input type="text" name="Actors[]" min="5" max="30" />
+    <input type="text" name="Actors[]" min="5" max="30" />
 
     <p>Directors</p>
-    <input type="text" name="Directors[]" required />
-    <input type="text" name="Directors[]" />
-    <input type="text" name="Directors[]" />
+    <input type="text" name="Directors[]" min="5" max="30" required />
+    <input type="text" name="Directors[]" min="5" max="30" />
+    <input type="text" name="Directors[]" min="5" max="30" />
 
     <input type="submit" method="post" />
 </form>
